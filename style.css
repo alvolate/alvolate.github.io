@@ -87,7 +87,7 @@ a:hover {
 
 			margin-bottom: 0;
 			word-wrap: break-word;
-			word-break: break-all; /* break words anywhere, not just at hyphens */
+			word-break: kepp-al; 
 			max-width: 600px; 
 		}
 		header.major > h6{
