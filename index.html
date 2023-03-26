@@ -1,84 +1,140 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>tydennis</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body class="is-preload">
+        
+        <link rel="stylesheet" href="style.css" />
+        <style>
+			body{
+				overflow: hidden;
+			}
+            #wheel .square:nth-child(13) {
+                background-color: #9bf1ff;
+                z-index: -1;
+            }
+            #wheel .square:nth-child(12) {
+                z-index: 0;
+            }
+            #wheel .square:nth-child(14) {
+                z-index: 0;
+            }
+            #wheel .square:nth-child(11) {
+                z-index: 1;
+            }
+            #wheel .square:nth-child(15) {
+                z-index: 1;
+            }
+            #wheel .square:nth-child(10) {
+                z-index: 2;
+            }
+            #wheel .square:nth-child(16) {
+                z-index: 2;
+            }
+            #wheel .square:nth-child(9) {
+                z-index: 3;
+            }
+            #wheel .square:nth-child(1) {
+                z-index: 3;
+            }
+            #wheel .square:nth-child(8) {
+                z-index: 4;
+            }
+            #wheel .square:nth-child(2) {
+                z-index: 4;
+            }
+            #wheel .square:nth-child(7) {
+                z-index: 5;
+            }
+            #wheel .square:nth-child(3) {
+                z-index: 5;
+            }
+            #wheel .square:nth-child(6) {
+                z-index: 6;
+            }
+            #wheel .square:nth-child(4) {
+                z-index: 6;
+            }
+            #wheel .square:nth-child(5) {
+                z-index: 7;
+            }
+        </style>
+    </head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-        <section id="two">
-            <div class="inner">
-              <header class="major">
-                <a href="index.html"><strong>DENNIS </strong> <span>kim </span></a>
-              </header>
-              <p>Hi, I'm Dennis Kim! <br><br>I'm a third-year student at the University of Toronto, pursuing a Bachelor's degree in Computer Science with a specialization in logic and data science. </p>
+    <body>
+
+        <div>
+            <strong><a href="index.html" class="active">D</a>ENNIS </strong> <span><a href="index.html" class="active">K</a>im</span>
+        </div>
+        <div class="topborder">
+              <p>Hi, I'm Dennis Kim! <br><br>I'm a third-year student at the <a rel="noopener noreferrer" target="_blank" href="https://www.utoronto.ca/">University of Toronto</a>, pursuing a Bachelor's degree in Computer Science with a specialization in logic and data science. </p>
               <p>During the Summer of 2020, I have demonstrated my passion for research through the internship at KAIST.</p>
-              <p>On this website, you will find some of my projects and my resume.</p>
+              <p>On this website, you will find some of my <a class="text" href="./projects">projects</a> and my <a class="text" href="./assets/d-kim-resume.pdf">resume</a>.</p>
               <p>Thanks for looking around!</p>
-              <a href="#one" class="button small">Get Started</a>
-            </div>
-          </section>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="./assets/d-kim-resume.pdf" class="link">Resume</a></h3>
-										<p>more <br>about<br> me</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="./projects.html" class="link">Projects</a></h3>
-										<p>My projects</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="./for_me.html" class="link">For Me</a></h3>
-										<p>Shortcut to my school website</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="./writing.html" class="link">Writing</a></h3>
-										<p>I <br> Hope<br> You<br>like <br>it</p>
-									</header>
-								</article>
-								
-					
-							</section>
-		
-					</div>
-				<!-- Footer -->
-					<footer id="footer">
-					  <ul class="copyright">
-								<li>Dennis Kim- 2023</li>
-                <li>You can find me on <a class="finish" style="color:#FFF7E8" rel="noopener noreferrer" target="_blank" href='https://github.com/alvolate'>Github</a>, <a style="color:#FFF7E8" rel="noopener noreferrer" target="_blank" href='https://www.linkedin.com/in/taeyang-kim-4b03581b8/'>LinkedIn</a>, or <a style="color:#FFF7E8" rel="noopener noreferrer" target="_blank" href='mailto:taeyang.kim@mail.utoronto.ca'>Email Me!</a></p></li>
-						</ul>
-					</footer>
+        <footer id="footer">
+            <ul class="copyright">
+                <li>Dennis Kim- 2023</li>
+                <li>You can find me on&nbsp <a rel="noopener noreferrer" target="_blank" href='https://github.com/alvolate'>Github</a>, <a rel="noopener noreferrer" target="_blank" href='https://www.linkedin.com/in/taeyang-kim-4b03581b8/'>&nbspLinkedIn</a>, or <a rel="noopener noreferrer" target="_blank" href='mailto:taeyang.kim@mail.utoronto.ca'>&nbspEmail Me!</a></li>
 
-			</div>
+            </ul>
+        </footer>
+        <div id="wheel">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square" onclick="goToLink('./projects.html')"><h5>Projects</h5></div>
+            <div class="square"><h5>About Me</h5></div>
+            <div class="square" onclick="goToLink('./assets/d-kim-resume.pdf')"><h5>Resume</h5></div>
+            <div class="square" onclick="goToLink('/for_me.html')"><h5>For Dennis</h5></div>
+            <div class="square"></div>
+        
 
-		<!-- Scripts -->
+        </div>
 
-	</body>
+        
+        <script>
+            var wheel = document.getElementById("wheel");
+            
+            var isDragging = false;
+            var startX = 0;
+            var currentX = 0;
+            var rotation = 0;
+            wheel.addEventListener("mousedown", function(event) {
+                isDragging = true;
+                startX = event.clientX;
+                currentX = event.clientX;
+            });
+
+            wheel.addEventListener("mouseup", function(event) {
+                isDragging = false;
+            });
+
+            wheel.addEventListener("mousemove", function(event) {
+                if (isDragging) {
+                    var deltaX = event.clientX - currentX;
+                    rotation += deltaX;
+                    wheel.style.transform = "rotate(" + rotation + "deg)";
+                    
+                    currentX = event.clientX;
+                }
+            });
+
+            wheel.addEventListener("animationend", function(event) {
+                wheel.style.animation = "none";
+            });
+            function goToLink(url) {
+            window.location.href = url;
+            }
+</script>
+        </script>
+
+    </body>
 </html>
